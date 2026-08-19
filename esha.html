@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 Reasons Why I Love You</title>
+<style>
+    body {
+        background: linear-gradient(135deg, #ffe6f0, #ffcce0);
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        padding: 20px;
+        overflow-x: hidden;
+    }
+    h1 { 
+        color: #d63384; 
+        font-size: 2.5em; 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        color: #a61c5c;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    .reason {
+        background: white;
+        margin: 10px auto;
+        padding: 15px;
+        border-radius: 15px;
+        max-width: 600px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        color: #333;
+        font-size: 1.1em;
+        transition: transform 0.2s;
+        text-align: left;
+        display: none;
+    }
+    .reason.show { display: block; animation: fadeIn 0.5s; }
+    @keyframes fadeIn { from {opacity: 0; transform: translateY(10px);} to {opacity: 1; transform: translateY(0);} }
+    .reason:hover { transform: scale(1.02); background: #fff0f5; }
+    .reason-num { color: #d63384; font-weight: bold; }
+    .heart {
+        position: fixed;
+        bottom: -10px;
+        color: #ff4d88;
+        font-size: 20px;
+        animation: float 6s infinite ease-in;
+        z-index: 999;
+    }
+    @keyframes float {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(-100vh); opacity: 0; }
+    }
+    .envelope {
+        font-size: 120px;
+        margin: 40px;
+        cursor: pointer;
+        animation: bounce 2s infinite;
+        transition: 0.3s;
+    }
+    .envelope:hover { transform: scale(1.1); }
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+    .hidden { display: none; }
+    #openText {
+        color: #d63384;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+</style>
+</head>
+<body>
+
+<div class="envelope" onclick="openLetter()">💌</div>
+<p id="openText">Click the envelope to open 💖</p>
+
+<div id="letterContent" class="hidden">
+    <h1>100 Reasons Why I Love You</h1>
+    <p class="subtitle">For you 💖</p>
+
+    <p style="color:#d63384; font-weight:bold;">Our Song 🎵</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC" width="100%" height="152" frameBorder="0" allowfullscreen loading="lazy"></iframe>
+
+    <div class="reason"><span class="reason-num">1.</span> your smile</div>
+    <div class="reason"><span class="reason-num">2.</span> your laugh</div>
+    <div class="reason"><span class="reason-num">3.</span> your eyes</div>
+    <div class="reason"><span class="reason-num">4.</span> your voice</div>
+    <div class="reason"><span class="reason-num">5.</span> your hair</div>
+    <div class="reason"><span class="reason-num">6.</span> your random yap</div>
+    <div class="reason"><span class="reason-num">7.</span> your weird side</div>
+    <div class="reason"><span class="reason-num">8.</span> your hands</div>
+    <div class="reason"><span class="reason-num">9.</span> your kindness</div>
+    <div class="reason"><span class="reason-num">10.</span> your brain</div>
+    <div class="reason"><span class="reason-num">11.</span> you listen to me</div>
+    <div class="reason"><span class="reason-num">12.</span> you remember little things about me</div>
+    <div class="reason"><span class="reason-num">13.</span> you care if i ate</div>
+    <div class="reason"><span class="reason-num">14.</span> you make me feel safe</div>
+    <div class="reason"><span class="reason-num">15.</span> you make me feel seen</div>
+    <div class="reason"><span class="reason-num">16.</span> you choose me everyday</div>
+    <div class="reason"><span class="reason-num">17.</span> you're patient with me</div>
+    <div class="reason"><span class="reason-num">18.</span> you cheer me up</div>
+    <div class="reason"><span class="reason-num">19.</span> you believe in me</div>
+    <div class="reason"><span class="reason-num">20.</span> you support my dreams</div>
+    <div class="reason"><span class="reason-num">21.</span> we laugh together</div>
+    <div class="reason"><span class="reason-num">22.</span> we're comfortable in silence</div>
+    <div class="reason"><span class="reason-num">23.</span> we match energy</div>
+    <div class="reason"><span class="reason-num">24.</span> we understand each other</div>
+    <div class="reason"><span class="reason-num">25.</span> we grow together</div>
+    <div class="reason"><span class="reason-num">26.</span> you're my favorite person to talk to</div>
+    <div class="reason"><span class="reason-num">27.</span> you're my favorite notification</div>
+    <div class="reason"><span class="reason-num">28.</span> you're my safe place</div>
+    <div class="reason"><span class="reason-num">29.</span> you're my home</div>
+    <div class="reason"><span class="reason-num">30.</span> you're my favorite "what if" that came true</div>
+    <div class="reason"><span class="reason-num">31.</span> the way you say my name</div>
+    <div class="reason"><span class="reason-num">32.</span> the way you ask "kumain ka na?"</div>
+    <div class="reason"><span class="reason-num">33.</span> the way you worry about me</div>
+    <div class="reason"><span class="reason-num">34.</span> the way you get jealous - it's cute</div>
+    <div class="reason"><span class="reason-num">35.</span> the way you get soft when you're tired</div>
+    <div class="reason"><span class="reason-num">36.</span> the way you try even when it's hard</div>
+    <div class="reason"><span class="reason-num">37.</span> the way you don't give up on us</div>
+    <div class="reason"><span class="reason-num">38.</span> the way you look at me</div>
+    <div class="reason"><span class="reason-num">39.</span> the way you protect me</div>
+    <div class="reason"><span class="reason-num">40.</span> the way you choose to stay</div>
+    <div class="reason"><span class="reason-num">41.</span> you're my comfort zone</div>
+    <div class="reason"><span class="reason-num">42.</span> you're my good morning</div>
+    <div class="reason"><span class="reason-num">43.</span> you're my good night</div>
+    <div class="reason"><span class="reason-num">44.</span> you're my playlist</div>
+    <div class="reason"><span class="reason-num">45.</span> you're my comfort food</div>
+    <div class="reason"><span class="reason-num">46.</span> you're my unwind</div>
+    <div class="reason"><span class="reason-num">47.</span> you're my peace</div>
+    <div class="reason"><span class="reason-num">48.</span> you're my chaos in a good way</div>
+    <div class="reason"><span class="reason-num">49.</span> you're my adventure</div>
+    <div class="reason"><span class="reason-num">50.</span> you're my favorite habit</div>
+    <div class="reason"><span class="reason-num">51.</span> i can see us growing old</div>
+    <div class="reason"><span class="reason-num">52.</span> i want all my firsts with you</div>
+    <div class="reason"><span class="reason-num">53.</span> i want to travel with you</div>
+    <div class="reason"><span class="reason-num">54.</span> i want to cook with you</div>
+    <div class="reason"><span class="reason-num">55.</span> i want to build with you</div>
+    <div class="reason"><span class="reason-num">56.</span> i want to fail and win with you</div>
+    <div class="reason"><span class="reason-num">57.</span> i want your family to be my family</div>
+    <div class="reason"><span class="reason-num">58.</span> i want to meet our future kids</div>
+    <div class="reason"><span class="reason-num">59.</span> i want to be your person</div>
+    <div class="reason"><span class="reason-num">60.</span> i want you to be my person</div>
+    <div class="reason"><span class="reason-num">61.</span> because of you i laugh more</div>
+    <div class="reason"><span class="reason-num">62.</span> because of you i smile more</div>
+    <div class="reason"><span class="reason-num">63.</span> because of you i'm braver</div>
+    <div class="reason"><span class="reason-num">64.</span> because of you i'm softer</div>
+    <div class="reason"><span class="reason-num">65.</span> because of you i'm better</div>
+    <div class="reason"><span class="reason-num">66.</span> because of you i'm not alone</div>
+    <div class="reason"><span class="reason-num">67.</span> because of you i have hope</div>
+    <div class="reason"><span class="reason-num">68.</span> because of you i have someone</div>
+    <div class="reason"><span class="reason-num">69.</span> because of you i have you</div>
+    <div class="reason"><span class="reason-num">70.</span> because of you i'm loved</div>
+    <div class="reason"><span class="reason-num">71.</span> you don't leave even when i'm makulit</div>
+    <div class="reason"><span class="reason-num">72.</span> you stay even when i'm makunsumami</div>
+    <div class="reason"><span class="reason-num">73.</span> you explain even when i ask 10x</div>
+    <div class="reason"><span class="reason-num">74.</span> you forgive me so fast</div>
+    <div class="reason"><span class="reason-num">75.</span> you understand even when i can't explain</div>
+    <div class="reason"><span class="reason-num">76.</span> you're real, no plastic</div>
+    <div class="reason"><span class="reason-num">77.</span> you're loyal</div>
+    <div class="reason"><span class="reason-num">78.</span> you're funny</div>
+    <div class="reason"><span class="reason-num">79.</span> you're sweet when you want to be</div>
+    <div class="reason"><span class="reason-num">80.</span> you're strong</div>
+    <div class="reason"><span class="reason-num">81.</span> because you feel like home</div>
+    <div class="reason"><span class="reason-num">82.</span> because with you, i'm me</div>
+    <div class="reason"><span class="reason-num">83.</span> because you don't judge me</div>
+    <div class="reason"><span class="reason-num">84.</span> because you hold my hand on hard days</div>
+    <div class="reason"><span class="reason-num">85.</span> because you make ordinary days special</div>
+    <div class="reason"><span class="reason-num">86.</span> because you're worth it</div>
+    <div class="reason"><span class="reason-num">87.</span> because i choose you</div>
+    <div class="reason"><span class="reason-num">88.</span> because my heart picked you</div>
+    <div class="reason"><span class="reason-num">89.</span> because i can't imagine life without you</div>
+    <div class="reason"><span class="reason-num">90.</span> because i love you</div>
+    <div class="reason"><span class="reason-num">91.</span> because i really love you</div>
+    <div class="reason"><span class="reason-num">92.</span> because i love the way you love me</div>
+    <div class="reason"><span class="reason-num">93.</span> because you're mine</div>
+    <div class="reason"><span class="reason-num">94.</span> because i'm yours</div>
+    <div class="reason"><span class="reason-num">95.</span> because us</div>
+    <div class="reason"><span class="reason-num">96.</span> because always</div>
+    <div class="reason"><span class="reason-num">97.</span> because forever</div>
+    <div class="reason"><span class="reason-num">98.</span> because it's you</div>
+    <div class="reason"><span class="reason-num">99.</span> because it will always be you</div>
+    <div class="reason"><span class="reason-num">100.</span> because i love you 100x more than this list</div>
+</div>
+
+<script>
+    function openLetter() {
+        document.querySelector('.envelope').style.display = 'none';
+        document.getElementById('openText').style.display = 'none';
+        document.getElementById('letterContent').classList.remove('hidden');
+        
+        const reasons = document.querySelectorAll('.reason');
+        reasons.forEach((r, i) => {
+            setTimeout(() => r.classList.add('show'), i * 80);
+        });
+    }
+
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerText = '❤️';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(createHeart, 300);
+</script>
+
+</body>
+  </html>
